@@ -1,5 +1,4 @@
 clear
-@echo off
 chmod 700 secrets.txt
 CURRENT_DATE=$(date +"%Y-%m-%d_%H-%M-%S")
 clear
@@ -20,7 +19,7 @@ then
 	echo "$secret" >> secrets.txt
 	echo "$CURRENT_DATE" >> secrets.txt
 	cat secrets.txt
-		sleep 2
+	sleep 5
 else
 	echo "░░░╔╗░░░░░░░░░░░░░░░░░░░░╔╗░░░░░░░░░░░░░░░░░░░░░░░░░╔╗░
 ░░░║║░░░░░░░░░░░░░░░░░░░╔╝╚╗░░░░░░░░░░░░░░░░░░░░░░░╔╝╚╗
@@ -35,3 +34,4 @@ else
 	sleep 3
 	./add-secrets.sh
 fi
+
