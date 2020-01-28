@@ -1,3 +1,4 @@
+#!/bin/bash
 clear
 chmod 700 secrets.txt
 CURRENT_DATE=$(date +"%Y-%m-%d_%H-%M-%S")
